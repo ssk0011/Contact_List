@@ -63,23 +63,23 @@ public class CSV_readwrite {
 				"ID,First Name,Last Name,Address,City,State,ZIP,Phone"
 			*/
 			w = new FileWriter(official_filename, true);
-			w.append(Integer.toString(c.getID()));
-			System.out.println(c.getFirstName());
+			w.append(Integer.toString(c.get_ID()));
+			System.out.println(c.get_first_name());
 
 			w.append(",");
-			w.append(c.getFirstName());
+			w.append(c.get_first_name());
 			w.append(",");
-			w.append(c.getLastName());
+			w.append(c.get_last_name());
 			w.append(",");
-			w.append(c.getAddress());
+			w.append(c.get_address());
 			w.append(",");
-			w.append(c.getCity());
+			w.append(c.get_city());
 			w.append(",");
-			w.append(c.getState());
+			w.append(c.get_state());
 			w.append(",");
-			w.append(c.getZip());
+			w.append(c.get_zip());
 			w.append(",");
-			w.append(c.getPhone());
+			w.append(c.get_phone());
 			w.append("\n");
 
 			System.out.println("Data successfully appended to CSV.");
@@ -116,21 +116,21 @@ public class CSV_readwrite {
 			w.append("\n");
 			
 			for (Contact c : contacts) {
-				w.append(Integer.toString(c.getID()));
+				w.append(Integer.toString(c.get_ID()));
 				w.append(",");
-				w.append(c.getFirstName());
+				w.append(c.get_first_name());
 				w.append(",");
-				w.append(c.getLastName());
+				w.append(c.get_last_name());
 				w.append(",");
-				w.append(c.getAddress());
+				w.append(c.get_address());
 				w.append(",");
-				w.append(c.getCity());
+				w.append(c.get_city());
 				w.append(",");
-				w.append(c.getState());
+				w.append(c.get_state());
 				w.append(",");
-				w.append(c.getZip());
+				w.append(c.get_zip());
 				w.append(",");
-				w.append(c.getPhone());
+				w.append(c.get_phone());
 				w.append("\n");
 			}
 			
